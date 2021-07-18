@@ -19,9 +19,9 @@ if($_SESSION['admin'] != "admin"){
 <button><a href="index.php?do=logout">Logout</a></button>
 
 <div class="container">
-    <h2>Тестовое задание на получение курсов валют</h2>
-    <h3>Курс доллара: <span id="usd"></span></h3>
-    <h3>Курс евро: <span id="eur"></span></h3>
+    <h2>Курс доллара и евро (с сайта moex.com)</h2>
+    <h3>Курс доллара: <span id="usd"> _______ </span> руб.</h3>
+    <h3>Курс евро: <span id="eur"> _______ </span> руб.</h3>
     <button id="getData">Узнать курс валют</button>
 
 </div>

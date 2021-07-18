@@ -10,10 +10,9 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf \
         libpng-dev \
     && docker-php-ext-install -j$(nproc) mbstring pdo_mysql tokenizer iconv mysqli \
     && docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/ \
-    && docker-php-ext-install -j$(nproc) gd
+    && docker-php-ext-install -j$(nproc) gd \
+    && a2enmod rewrite
 
-# Apache modules
-RUN a2enmod rewrite
 # Указываем рабочую папку
 WORKDIR /var/www/html
 # Копируем все файлы проекта в контейнер
