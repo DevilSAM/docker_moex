@@ -11,5 +11,5 @@
 9. Visit "my.docker.com" in your browser
 
 P.S. You can change the address for use.
-All you need is replace "my.docker.com" to <your-own-name> in the ./nginx/default.conf (line 3)
-Of cause you need change "my.docker.com" to <your-own-name> on 4th step of this manual.
+All you need is replace **my.docker.com** to **your-own-name** in the ./nginx/default.conf (line 3)
+Of cause you need change **my.docker.com** to **your-own-name** on 4th step of this manual.
