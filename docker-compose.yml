@@ -12,6 +12,3 @@ services:
     volumes:
       - ./:/var/www/
       - ./apache/php.ini:/usr/local/etc/php/php.ini
-  moex:
-    build:
-      context: .
